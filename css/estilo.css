@@ -10,6 +10,8 @@ section {min-height: 100vh;}
             --cor-card-fundo: #ffffff;
             --cor-sombra: 0 4px 10px rgba(0, 0, 0, 0.05);
         }
+
+       
         
         .body {
             font-family: 'Poppins', sans-serif; 
