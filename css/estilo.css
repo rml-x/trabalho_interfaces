@@ -11,7 +11,7 @@ section {min-height: 100vh;}
             --cor-sombra: 0 4px 10px rgba(0, 0, 0, 0.05);
         }
         
-        body {
+        .body {
             font-family: 'Poppins', sans-serif; 
             line-height: 1.6;
             color: var(--cor-texto);
@@ -30,9 +30,9 @@ section {min-height: 100vh;}
             color: var(--cor-secundaria);
         }
 
-        /* Classes de utilidade */
+        
         .section {
-            padding: 3rem 5%;
+            padding: 0rem 5%;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -44,25 +44,25 @@ section {min-height: 100vh;}
             margin-bottom: 2rem;
             text-align: center;
             border-bottom: 3px solid var(--cor-primaria);
-            padding-bottom: 0.5rem;
         }
 
-        /* =========================================================
-        HEADER E NAV (MENU) - (CSS SELECIONADO ADAPTADO)
-        =========================================================
-        */
+    
         .header {
             background-color: var(--cor-primaria);
             color: white;
-            padding: 5%;
+            padding: 3%;
             display: flex;
             justify-content: space-between; 
-            align-items: center;
+            align-items: flex;
             flex-wrap: wrap; 
-            position: sticky; /* Menu fixo no topo */
+            position: sticky; 
             top: 0;
-            z-index: 1000;
+            z-index: 10;
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .main{
+           padding: 16px;
         }
 
         .logo {
@@ -72,7 +72,7 @@ section {min-height: 100vh;}
         }
 
         .logo img {
-            /* Usando URL placeholder para simular o logo arredondado */
+           
             width: 70px; 
             height: 70px;
             border-radius: 50%;
@@ -102,7 +102,7 @@ section {min-height: 100vh;}
             flex-grow: 1;
             border: none;
             background: transparent;
-            color: white;
+            color: var(--cor-header-fundo);
             padding: 0;
             outline: none;
             font-size: 0.9rem;
@@ -203,6 +203,27 @@ section {min-height: 100vh;}
             width: 90%;
             z-index: 2;
         }
+
+        .texto-sobre-imagem {
+            position: absolute;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 250;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            display: flex; 
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 1rem;
+            width: 90%;
+            z-index: 2;
+            font-size: clamp(2rem, 6vw, 4rem); 
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+            margin: 0;
+            line-height: 1.1;
+        }
                   
        
         .Destaques {
@@ -230,6 +251,7 @@ section {min-height: 100vh;}
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             display: flex;
             flex-direction: column;
+            margin-bottom: 32px;
         }
 
         .card:hover {
@@ -254,7 +276,7 @@ section {min-height: 100vh;}
         }
 
         .card-content {
-            padding: 1rem;
+            padding: 2rem;
             text-align: center;
         }
 
@@ -265,18 +287,17 @@ section {min-height: 100vh;}
             font-weight: 600;
         }
 
-        /* =========================================================
-        SECTION 2: CATEGORIAS POPULARES
-        =========================================================
-        */
+      
         .categorias-populares {
             width: 100%;
             display: flex;
             justify-content: center;
-            padding: 2rem 0;
+            padding: 2rem 0.5;
+            
         }
         
         .categorias-populares button {
+    
             background-color: var(--cor-primaria);
             color: white;
             padding: 15px 40px;
@@ -294,30 +315,29 @@ section {min-height: 100vh;}
         }
 
 
-        #sobre {
+        .sobre {
             background-color: white;
-            padding-bottom: 5rem;
+            padding-bottom: 3rem;
         }
 
         .minilogo img {
-            width: 150px;
-            height: auto;
-            margin-bottom: 2rem;
+            max-height: 10em;
+            min-height: 1em;
+            width: auto;
         }
         
-        #sobre article {
+        .texto {
             max-width: 800px;
-            /* Corrigido o alinhamento de texto para left para melhor legibilidade */
-            text-align: left; 
+            text-align: justify; 
             font-size: 1.05rem;
             color: #374151;
-            padding: 0 20px;
+            padding: 4px;
         }
         
-        /* VOLTAR AO TOPO LINK */
+        
         .topo-link {
             display: block;
-            margin-top: 3rem;
+            margin-top: 32px;
             padding: 15px 30px; 
             font-size: 1.05rem; 
             border: 2px solid var(--cor-secundaria);
@@ -325,6 +345,9 @@ section {min-height: 100vh;}
             color: var(--cor-secundaria);
             font-weight: 600;
             transition: background-color 0.3s, color 0.3s;
+            margin-bottom: 32px;
+            display: inline-block;
+            
         }
 
         .topo-link:hover {
