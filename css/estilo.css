@@ -392,8 +392,7 @@ section {min-height: 100vh;}
         }
         
         .texto {
-            max-width: 800px;
-            text-align: justify; 
+            max-width: 800px; 
             font-size: 1.05rem;
             color: var(--cor-fundo);
             padding: 4px;
