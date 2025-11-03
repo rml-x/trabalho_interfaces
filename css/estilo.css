@@ -5,7 +5,7 @@ section {min-height: 100vh;}
         --cor-secundaria: #fbfeff;    
         --cor-fundo: #121212;          
         --cor-texto: #272020;     
-        --cor-texto-escuro: #ffffff;   
+        --cor-texto-escuro: #000000;   
         --cor-vermelho: #C62828;      
         --cor-header-fundo: #212121;  
         --cor-card-fundo: #212121;    
@@ -90,7 +90,7 @@ section {min-height: 100vh;}
         }
         
         .logo h6 {
-            color: white;
+            color: rgb(0, 0, 0);
             margin: 0;
             font-weight: 400;
             font-size: 1rem;
@@ -142,7 +142,7 @@ section {min-height: 100vh;}
         display: inline-block;  
         color: var(--cor-texto-escuro); 
         text-decoration: none; 
-        border-bottom:3px solid #EDEDED; 
+        border-bottom:3px solid #522c2c; 
         }
         .menu ul li a:hover { 
         background-color: var(--cor-sombra);
@@ -166,7 +166,7 @@ section {min-height: 100vh;}
             margin-bottom: 3rem;
             border-radius: 12px;
             overflow: hidden;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+
         }
         
         
@@ -177,7 +177,7 @@ section {min-height: 100vh;}
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.4); 
+            background: rgba(14, 0, 0, 0.849); 
             z-index: 1; 
             border-radius: 12px;
         }
@@ -197,7 +197,7 @@ section {min-height: 100vh;}
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            color: rgb(255, 230, 0);
+            color: rgb(255, 255, 255);
             display: flex; 
             flex-direction: column;
             align-items: center;
@@ -424,7 +424,7 @@ section {min-height: 100vh;}
        
         .footer {
             background-color: var(--cor-header-fundo);
-            color: var(--cor-texto);
+            color: rgb(255, 255, 255);
             text-align: center;
             padding: 2rem 5%;
             font-size: 0.9rem;
