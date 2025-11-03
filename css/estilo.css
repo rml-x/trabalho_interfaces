@@ -144,11 +144,11 @@ section {min-height: 100vh;}
         text-decoration: none; 
         border-bottom:3px solid #522c2c; 
         }
-        .menu ul li a:hover { 
-        background-color: var(--cor-sombra);
-        color: var(--cor-header-fundo);
-        border-bottom:3px solid var(--cor-vermelho);
-        }
+        .menu ul li a:hover {
+        background-color: var(--cor-header-fundo); 
+        color: var(--cor-secundaria); 
+        border-bottom: 3px solid var(--cor-vermelho);
+    }
         .menu a {
             font-family: 'Poppins', sans-serif;
             color: var(--cor-texto-escuro);
@@ -380,10 +380,47 @@ section {min-height: 100vh;}
             border-radius: 8px;
         }
 
-        .sobre {
-            background-color: white;
-            padding-bottom: 3rem;
+        .container {
+        display: grid;
+        height: 400px;
+        gap: 4px;
+        grid-template-areas: 
+            "foto-1 foto-2"
+            "foto-1 foto-3"
+            "foto-1 foto-4"
+            "foto-1 foto-5"
+            ;
         }
+
+        .container div {
+        background-size: cover;      
+        background-position: center; 
+        background-repeat: no-repeat;
+        }
+
+        .foto-1 {
+            grid-area: foto-1;
+            background-image: url('/img/prato-1.webp');
+        }
+
+        .foto-2 {
+            grid-area: foto-2;
+            background-image: url('/img/prato-2.webp');
+        }
+        .foto-3 {
+            grid-area: foto-3;
+            background-image: url('/img/prato-3.webp');
+
+        }
+        .foto-4 {
+            grid-area: foto-4;
+            background-image: url('/img/prato-4.webp');
+        }
+        .foto-5{
+            grid-area: foto-5;
+            background-image: url('/img/prato-5.webp');
+        }
+
 
         .minilogo img {
             max-height: 10em;
@@ -480,13 +517,10 @@ section {min-height: 100vh;}
                 font-size: clamp(1.5rem, 8vw, 2.5rem);
             }
 
-            @media (max-width: 900px) {
             
-            .container-grid-form {
-                grid-template-columns: 1fr; 
-                gap: 30px; 
-            }
+
+           
         }
 
-        }
+        
 
