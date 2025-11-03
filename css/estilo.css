@@ -400,25 +400,25 @@ section {min-height: 100vh;}
 
         .foto-1 {
             grid-area: foto-1;
-            background-image: url('/img/prato-1.webp');
+            background-image: url('img/prato-1.webp');
         }
 
         .foto-2 {
             grid-area: foto-2;
-            background-image: url('/img/prato-2.webp');
+            background-image: url('img/prato-2.webp');
         }
         .foto-3 {
             grid-area: foto-3;
-            background-image: url('/img/prato-3.webp');
+            background-image: url('img/prato-3.webp');
 
         }
         .foto-4 {
             grid-area: foto-4;
-            background-image: url('/img/prato-4.webp');
+            background-image: url('img/prato-4.webp');
         }
         .foto-5{
             grid-area: foto-5;
-            background-image: url('/img/prato-5.webp');
+            background-image: url('img/prato-5.webp');
         }
 
 
