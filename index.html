@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" type="text/css" href="css/estilo.css" >
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <title>Larica Receitas</title>
     <meta name="description" content="Descubra as melhores receitas de culinária na Larica Receitas. Encontre pratos rápidos, sobremesas e dicas de cozinha.">
     <meta property="og:title" content="Larica Receitas | Receitas Fáceis, Rápidas e Deliciosas">
@@ -22,16 +24,17 @@
 <body id = "topo">
     
     <header class = "header">
-        <h1> </h1>
+        
         <div class="logo">
             
-                <img src="img/Laricalogo.png" alt="Larica Logo">
+        <img src="img/Laricalogo.png" alt="Larica Logo" width="50" height="50">           
             
         
             <h6>Receitas & Mais</h6>
         </div>
 
         <div class="search-bar">
+            <label> </label>
             <input type="search" placeholder="Porco a pururuca...">
             <button type="submit">🔍</button>
         </div>
@@ -39,10 +42,10 @@
         <nav class="menu">
             <ul>
                 <li><a href="#Destaques" class="ativo">Destaques</a></li>
-                <li><a href="#categorias-populares" class="ativo">Categorias Populares</a></li>
-                <li><a href="#fale-conosco" class="ativo">Fale Conosco</a></li>
-                <li><a href="#galeria" class="ativo">Galeria</a></li>
-                <li><a href="#sobre" class="ativo">Sobre</a></li>
+                <li><a href="#categorias-populares">Categorias Populares</a></li>
+                <li><a href="#fale-conosco" >Fale Conosco</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#sobre">Sobre</a></li>
             </ul>
         </nav>
 
@@ -52,9 +55,7 @@
     <main class ="main">
         <section  class="section">
             <div class="img-com-texto">
-                <img src="img/banner.jpg"
-                     alt="Ingredientes dispostos sobre bancada" 
-                     class="hero-image">  
+                <img src="img/banner.jpg" alt="..." class="hero-image" width="1200" height="400"> 
                     <span class="texto-sobre-imagem">Descubra a Receita Perfeita Para Você Hoje</span>
             </div>
             
@@ -66,7 +67,7 @@
 
                 <article class="card">
                     <figure class="card-figure">
-                        <img src="img/cheseecake.jpg" alt="cheseecake">
+                        <img src="img/cheseecake.jpg" alt="cheseecake" width="280" height="150" loading="lazy">
                     </figure>
                     <div class="card-content">
                         <h3>Cheesecake</h3>
@@ -75,8 +76,7 @@
 
                 <article class="card">
                     <figure class="card-figure">
-                        <img src="img/macarrão.jpg" alt="Macarrão Bolonhesa">
-                    </figure>
+                        <img src="img/macarrão.jpg" alt="banner-categorias" width="1200" height="200" loading="lazy">                    </figure>
                     <div class="card-content">
                         <h3>Macarrão Bolonhesa</h3>
                     </div>
@@ -84,7 +84,7 @@
 
                 <article class="card">
                     <figure class="card-figure">
-                        <img src="img/panquecas.jpg" alt="Panquecas">
+                        <img src="img/panquecas.jpg" alt="panquecas" width="280" height="150" loading="lazy">
                     </figure>
                     <div class="card-content">
                         <h3>Panquecas</h3>
@@ -93,8 +93,7 @@
 
                 <article class="card">
                     <figure class="card-figure">
-                        <img src="img/pudim.jpg" alt="Pudim">
-                    </figure>
+                        <img src="img/pudim.jpg" alt="pudim" width="280" height="150" loading="lazy">                    </figure>
                     <div class="card-content">
                         <h3>Pudim</h3>
                     </div>
@@ -102,8 +101,7 @@
 
                 <article class="card">
                     <figure class="card-figure">
-                        <img src="img/brownie.jpg" alt="Brownie">
-                    </figure>
+                        <img src="img/brownie.jpg" alt="brownie" width="280" height="150" loading="lazy">                    </figure>
                     <div class="card-content">
                         <h3>Brownie</h3>
                     </div>
@@ -111,8 +109,7 @@
 
                 <article class="card">
                     <figure class="card-figure">
-                        <img src="img/risoles.jpg" alt="Risoles">
-                    </figure>
+                        <img src="img/risoles.jpg" alt="risoles" width="280" height="150" loading="lazy">                    </figure>
                     <div class="card-content">
                         <h3>Risoles</h3>
                     </div>
@@ -131,7 +128,7 @@
             </div>
 
             <div class = "banner-categorias">
-                <img src="img/banner2.jpg" alt="banner-categorias">      
+                <img src="img/banner2.jpg" alt="banner-categorias" width="1200" height="200" loading="lazy">     
             </div>
 
             <a href="#topo" class="topo-link">Voltar para o topo</a>
@@ -213,7 +210,7 @@
             
 
             <div id = "sobre" class = "minilogo">
-                <img src="img/minilogo.png" alt="Logo miniatura">
+                <img src="img/minilogo.png" alt="Logo miniatura" width="100" height="100" loading="lazy">
                 
             </div>
             <h2>Sobre</h2>
