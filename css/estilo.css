@@ -326,8 +326,10 @@ section {min-height: 100vh;}
             margin: 0 auto;
         }
 
-        .legenda{
-            color: var(--cor-secundaria);
+       legend {
+        color: #f1edea;
+        font-weight: bold; /* opcional */
+        font-size: 1.2em; 
         }
         .meu-form {
             background-color: var(--cor-card-fundo);
