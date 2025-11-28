@@ -28,7 +28,6 @@
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://rml-x.github.io/trabalho_interfaces/" >
     <meta property="twitter:title" content="Larica Receitas">
-    <meta property="twitter:description" content="Descubra as melhores receitas de culinária na Larica Receitas. Encontre pratos rápidos, sobremesas e dicas de cozinha." />
     <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" >
 
     <!-- Meta Tags Generated with https://metatags.io -->
@@ -70,9 +69,28 @@
     <main class ="main">
         <section  class="section">
             <div class="img-com-texto">
-                <img src="img/banner.webp" fetchpriority="high" alt="..." class="hero-image" width="1200" height="400"> 
-                    
-            </div>
+    <picture>
+        <source 
+            srcset="img/banner.webp" 
+            type="image/webp"
+            media="(min-width: 1200px)">
+        <source 
+            srcset="img/banner.webp" 
+            type="image/webp"
+            media="(min-width: 768px)">
+        <source 
+            srcset="img/banner.webp" 
+            type="image/webp">
+        <img 
+            src="img/banner.webp" 
+            fetchpriority="high" 
+            alt="Descubra a Receita Perfeita Para Você Hoje" 
+            class="hero-image" 
+            width="1200" 
+            height="400">
+    </picture>
+    
+</div>
             
             <div id ="Destaques">
                 <h2> Destaques</h2>
@@ -142,9 +160,7 @@
                 <button>Explorar Receitas</button>
             </div>
 
-            <div class = "banner-categorias">
-                <img src="img/banner2-convertido-de-jpg.webp" alt="banner-categorias" width="1200" height="200" loading="lazy">     
-            </div>
+            
 
             <a href="#topo" class="topo-link">Voltar para o topo</a>
         </section>
