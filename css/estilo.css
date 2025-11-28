@@ -1,11 +1,10 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 
 html, body {
     height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -215,26 +214,7 @@ section {min-height: 100vh;}
         }
 
         
-        .texto-sobre-imagem {
-            position: absolute;
-            font-family: 'Poppins', sans-serif;
-            font-weight: 250;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: rgb(0, 0, 0);
-            display: flex; 
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            padding: 1rem;
-            width: 90%;
-            z-index: 2;
-            font-size: clamp(2rem, 6vw, 4rem); 
-            margin: 0;
-            line-height: 1.1;
-        }
-                  
+  
        
         .Destaques {
             display: flex;
