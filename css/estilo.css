@@ -1,3 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+button {
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+
+input, textarea, select {
+    font-family: 'Poppins', sans-serif;
+}
+
 section {min-height: 100vh;}
 
     :root {
@@ -327,7 +350,7 @@ section {min-height: 100vh;}
 
        legend {
         color: #f1edea;
-        font-weight: bold; /* opcional */
+        font-weight: bold; 
         font-size: 1.2em; 
         }
         .meu-form {
@@ -351,11 +374,11 @@ section {min-height: 100vh;}
         .meu-form textarea {
             width: 100%;
             padding: 10px;
-            border: 1px solid #444; 
-            border-radius: 4px;
+            border-radius: 5%;
             box-sizing: border-box;
             background-color: #333;
             color: var(--cor-texto); 
+            border: none;
         }
 
         .meu-form button {
@@ -383,20 +406,26 @@ section {min-height: 100vh;}
 
         .container {
         display: grid;
+        width: 100%;
+        max-width: 1200px;
         height: 400px;
         gap: 4px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 1fr);
         grid-template-areas: 
             "foto-1 foto-2"
             "foto-1 foto-3"
             "foto-1 foto-4"
             "foto-1 foto-5"
             ;
+        margin: 0 auto;
         }
 
         .container div {
         background-size: cover;      
         background-position: center; 
         background-repeat: no-repeat;
+        background-color: #e0e0e0;
         }
 
         .foto-1 {
