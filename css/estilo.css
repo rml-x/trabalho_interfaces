@@ -42,6 +42,7 @@ section {min-height: 100vh;}
         }
         
         .section h2 {
+            font-family: 'Poppins', sans-serif;
             font-size: 2.5rem;
             color: var(--cor-texto);
             margin-bottom: 2rem;
@@ -89,6 +90,7 @@ section {min-height: 100vh;}
         }
         
         .logo h6 {
+            font-family: 'Poppins', sans-serif;
             color: rgb(0, 0, 0);
             margin: 0;
             font-weight: 400;
@@ -159,7 +161,7 @@ section {min-height: 100vh;}
         .menu ul li a:hover {
         background-color: var(--cor-header-fundo); 
         color: var(--cor-secundaria); 
-        border-bottom: 3px solid var(--cor-vermelho);
+        
     }
         .menu a {
             font-family: 'Poppins', sans-serif;
@@ -230,7 +232,7 @@ section {min-height: 100vh;}
         .card {
             flex: 1 1 220px; 
             max-width: 280px;
-            background-color: var(--cor-card-fundo); 
+            background-color: #ffffff; 
             box-shadow: var(--cor-sombra);
             border-radius: 12px;
             overflow: hidden;
@@ -246,7 +248,7 @@ section {min-height: 100vh;}
         }
 
         .card-figure {
-            height: 150px;
+            height: 220px;
             overflow: hidden;
         }
 
@@ -262,12 +264,12 @@ section {min-height: 100vh;}
         }
 
         .card-content {
-            padding: 2rem;
+            padding: 1rem;
             text-align: center;
         }
 
         .card-content h3 {
-            color: var(--cor-card-fundo);
+            color: #000000;
             margin: 0;
             font-size: 1.1rem;
             font-weight: 600;
