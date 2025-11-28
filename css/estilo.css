@@ -58,7 +58,6 @@ section {min-height: 100vh;}
             justify-content: space-between; 
             align-items: center;
             flex-wrap: wrap; 
-            position: sticky; 
             top: 0;
             z-index: 10;
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
@@ -112,7 +111,7 @@ section {min-height: 100vh;}
             flex-grow: 1;
             border: none;
             background: transparent;
-            color: var(--cor-header-fundo);
+            color: var(--cor-secundaria);
             padding: 0;
             outline: none;
             font-size: 0.9rem;
@@ -170,18 +169,6 @@ section {min-height: 100vh;}
         }
         
         
-        .img-com-texto::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(14, 0, 0, 0.849); 
-            z-index: 1; 
-            border-radius: 12px;
-        }
-
         .hero-image {
             width: 100%;
             height: auto;
@@ -197,7 +184,7 @@ section {min-height: 100vh;}
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
             display: flex; 
             flex-direction: column;
             align-items: center;
@@ -206,7 +193,6 @@ section {min-height: 100vh;}
             width: 90%;
             z-index: 2;
             font-size: clamp(2rem, 6vw, 4rem); 
-            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
             margin: 0;
             line-height: 1.1;
         }
@@ -518,6 +504,12 @@ section {min-height: 100vh;}
             .texto-sobre-imagem {
                 font-size: clamp(1.5rem, 8vw, 2.5rem);
             }
+            
+            .container-grid-form {
+            display: grid;             
+            grid-template-columns: 1fr; 
+            gap: 20px;                 
+        }
 
             
 
