@@ -412,6 +412,44 @@ section {min-height: 100vh; contain: layout;}
             grid-area: foto-5;
         }
 
+        .carousel-item {
+            min-height: 400px;
+        }
+
+        .carousel-item img {
+            aspect-ratio: 16 / 10;
+        }
+
+        #premium .table {
+            background-color: white;
+        }
+
+        #premium .table th {
+            font-weight: 600;
+        }
+
+        .modal-content {
+            border-radius: 12px;
+        }
+
+        .modal-header {
+            background-color: var(--cor-primaria);
+            color: var(--cor-texto-escuro);
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
+        }
+
+        .modal-title {
+            font-weight: 600;
+        }
+
+      .btn-warning {
+            background-color: var(--cor-primaria);
+            border-color: var(--cor-primaria);
+            color: var(--cor-texto-escuro);
+        }
+
+
 
         .minilogo img {
             max-height: 10em;
