@@ -66,9 +66,7 @@ section {min-height: 100vh;}
             transition: color 0.3s ease;
         }
 
-        a:hover {
-            color: var(--cor-secundaria);
-        }
+        
 
     
         .section {
@@ -84,6 +82,7 @@ section {min-height: 100vh;}
             color: var(--cor-texto);
             margin-bottom: 2rem;
             text-align: center;
+            min-height: 3rem;
             border-bottom: 3px solid var(--cor-primaria);
         }
 
@@ -196,11 +195,7 @@ section {min-height: 100vh;}
         text-decoration: none; 
         border-bottom:3px solid #522c2c; 
         }
-        .menu ul li a:hover {
-        background-color: var(--cor-header-fundo); 
-        color: var(--cor-secundaria); 
-        
-    }
+     
         .menu a {
             font-family: 'Poppins', sans-serif;
             color: var(--cor-texto-escuro);
@@ -251,7 +246,6 @@ section {min-height: 100vh;}
             box-shadow: var(--cor-sombra);
             border-radius: 12px;
             overflow: hidden;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
             display: flex;
             flex-direction: column;
             margin-bottom: 32px;
@@ -265,7 +259,7 @@ section {min-height: 100vh;}
             width: 100%;
             height: 100%;
             object-fit: cover;
-            transition: transform 0.5s ease;
+            
         }
         .card-content {
             padding: 1rem;
@@ -298,15 +292,7 @@ section {min-height: 100vh;}
             font-size: 1.1rem;
             font-weight: 600;
             cursor: pointer;
-            transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
         }
-
-        .categorias-populares button:hover {
-            background-color: var(--cor-vermelho); 
-            color: var(--cor-texto);
-            transform: translateY(-2px);
-        }
-
       
         .container-grid-form {
             display: grid;
@@ -395,35 +381,32 @@ section {min-height: 100vh;}
         }
 
         .container div {
-            background-size: cover;      
-            background-position: center; 
-            background-repeat: no-repeat;
-            background-color: #e0e0e0;
-            aspect-ratio: auto; 
-            min-height: 100px;
+            overflow: hidden; 
         }
+
+        .container div img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
 
         .foto-1 {
             grid-area: foto-1;
-            background-image: url('https://rml-x.github.io/trabalho_interfaces/img/prato-1.webp');
         }
 
         .foto-2 {
             grid-area: foto-2;
-            background-image: url('https://rml-x.github.io/trabalho_interfaces/img/prato-2.webp');
         }
         .foto-3 {
             grid-area: foto-3;
-            background-image: url('https://rml-x.github.io/trabalho_interfaces/img/prato-3.webp');
 
         }
         .foto-4 {
             grid-area: foto-4;
-            background-image: url('https://rml-x.github.io/trabalho_interfaces/img/prato-4.webp');
         }
         .foto-5{
             grid-area: foto-5;
-            background-image: url('https://rml-x.github.io/trabalho_interfaces/img/prato-5.webp');
         }
 
 
@@ -457,11 +440,7 @@ section {min-height: 100vh;}
             
         }
 
-        .topo-link:hover {
-            background-color: var(--cor-vermelho);
-            color: var(--cor-texto-escuro);
-            color: white;
-        }
+    
 
        
         .footer {
